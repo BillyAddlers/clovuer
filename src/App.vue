@@ -1,32 +1,27 @@
+<!--
+ * Welcome to Clovuer
+ * The comments in each files will guide you through your very cool journey
+ * discovering what Vue can do.
+ -->
 <template>
   <div id="app">
     <div id="nav">
+      <!--
+       * router-link tag is used to move the router-view
+      -->
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
     </div>
-    <router-view/>
+    <!--
+     * This is where your content will be displayed.
+     * Refer to `router/index.ts` for component that will be displayed
+     * over a router.
+    -->
+    <router-view></router-view>
   </div>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
-</style>
+<!--
+ * Clovuer shipped with SCSS/SASS support via node-sass.
+-->
+<style lang="scss" src="./styles.scss"></style>

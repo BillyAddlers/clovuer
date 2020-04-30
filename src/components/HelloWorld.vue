@@ -1,9 +1,21 @@
+<!--
+ * Welcome to Clovuer
+ * The comments in each files will guide you through your very cool journey
+ * discovering what Vue can do.
+ -->
 <template>
   <div class="hello">
+    <!--
+     * Prop declared before can be used
+     * as simple as using curly bracket wrap.
+    -->
     <h1>{{ msg }}</h1>
+    <h4>An Extended Vue</h4>
     <p>
       For a guide and recipes on how to configure / customize this project,<br>
       check out the
+      <a href="https://github.com/BillyAddlers/clovuer" target="_blank" rel="noopener">clovuer documentation</a>
+      and
       <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
     </p>
     <h3>Installed CLI Plugins</h3>
@@ -35,15 +47,27 @@
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue } from 'vue-property-decorator';
+  /**
+   * [reflect-metadata](https://github.com/rbuckton/reflect-metadata) is used to emit metadata decorator
+   * for the @Prop tag to use TypeScript type as an actual type for Vue Prop.
+   */
+  import 'reflect-metadata'
+  import { Component, Prop, Vue } from 'vue-property-decorator';
 
-@Component
-export default class HelloWorld extends Vue {
-  @Prop() private msg!: string;
-}
+  @Component
+  export default class HelloWorld extends Vue {
+    /**
+     * @Prop decorator is used to declare Prop.
+     * Prop is accessible via HTML attribute tag.
+     */
+    @Prop()
+    private msg!: string;
+  }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
+<!--
+ * "scoped" attribute tag limit the Style to this component only
+ -->
 <style scoped lang="scss">
 h3 {
   margin: 40px 0 0;
