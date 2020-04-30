@@ -1,23 +1,31 @@
-# clovuer
+![](src/assets/logo.png)
+# Clovuer
+> An extended Vue
+
+Clovuer is a set of tools to guide you in making a Website/WebApp using Vue.
 
 ## Project setup
-```
-pnpm install
+```shell script
+# Preferable method
+yarn
+# Alternative, if you're using NPM
+npm install
 ```
 
 ### Compiles and hot-reloads for development
-```
-pnpm run serve
+Clovuer utilizes vue-cli-service as a baseline for automated process. Any configuration related to vue-cli-services is acceptable.
+```shell script
+yarn run serve
 ```
 
 ### Compiles and minifies for production
-```
-pnpm run build
+```shell script
+yarn run build
 ```
 
 ### Lints and fixes files
-```
-pnpm run lint
+```shell script
+yarn run lint
 ```
 
 ### Customize configuration
