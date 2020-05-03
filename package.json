@@ -2,6 +2,8 @@
   "name": "clovuer",
   "version": "0.1.0",
   "private": true,
+  "author": "Riichi_Rusdiana#6815",
+  "license": "MIT",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -23,7 +25,7 @@
     "vuex": "^3.1.3"
   },
   "optionalDependencies": {
-
+    "axios": "^0.19.2"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^2.26.0",

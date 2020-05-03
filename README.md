@@ -1,4 +1,9 @@
-![](src/assets/logo.png)![](src/assets/heart.png)![](src/assets/typescript-logo.png)
+<p align="center">
+    <img alt="uwu" src="./src/assets/logo.png">
+    <img alt="owo" src="./src/assets/heart.png">
+    <img alt="ewe" src="./src/assets/typescript-logo.png">
+</p>
+ 
 # Clovuer
 > An extended Vue
 

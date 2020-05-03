@@ -10,7 +10,7 @@
   import {Component} from "vue-property-decorator"
 
   @Component({
-    name: "CvueButtonGroup"
+    name: "CvueButtonGroupDiv.vue"
   })
   export default class CvueButtonGroup extends Vue {}
 </script>
