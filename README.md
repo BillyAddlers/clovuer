@@ -1,14 +1,14 @@
 <p align="center">
-    <img alt="uwu" src="./src/assets/logo.png">
-    <img alt="owo" src="./src/assets/heart.png">
-    <img alt="ewe" src="./src/assets/typescript-logo.png">
+    <img alt="uwu" src="src/assets/logo.png">
+    <img alt="owo" src="src/assets/heart.png">
+    <img alt="ewe" src="src/assets/typescript-logo.png">
 </p>
  
 # Clovuer
 > An extended Vue
 
 Clovuer is a set of tools to guide you in making a Website/WebApp using Vue.
-You can start modifying your Vue installation by editing `src/main.ts`.
+You can start modifying your Vue installation by editing [src/main.ts](src/main.ts).
 
 ## Project setup
 ```shell script
@@ -44,13 +44,15 @@ Clovuer shipped with these libraries to give you the best experience in using Vu
 * Vuex
 * Vue-router
 * Vue-cli-service
+* [Vue-i18n](https://kazupon.github.io/vue-i18n/)
+* Axios
 * TypeScript
 * Eslint
 * Babel
 * Bootstrap
 * Bootswatch
 * SASS/SCSS Preprocessor
-* Clovuer-components
+* [Clovuer-components](src/clovuer_static_modules/README.md)
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).

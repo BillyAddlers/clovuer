@@ -24,7 +24,6 @@
   import HelloWorld from '@/components/HelloWorld.vue'
   import Vue from "vue"
   import {Component} from "vue-property-decorator"
-
   /**
    * @Component decorator is used to declare a Vue Component
    * and including Component into the Vue instance
