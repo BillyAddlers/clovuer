@@ -8,8 +8,4 @@ export class CvueAxios {
     this.url = url;
     return this
   }
-  
-  public setParam(param: Object) {
-  
-  }
 }

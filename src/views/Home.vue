@@ -12,22 +12,17 @@
      * Vue Components can be called as easy as using HTML's custom tags
      * Some Component also have property called Prop, and can be defined
      * via HTML attribute tag.
+     * i18n was implemented using v-bind directive. See `./locales` for available messages.
     -->
-    <HelloWorld msg="Welcome to Your Clovuer App"/>
+    <HelloWorld :msg="$t('message.welcome')"/>
   </div>
 </template>
 
 <script lang="ts">
-  /**
-   * You can use `@/` as an equivalent for `./src`
-   */
   import HelloWorld from '@/components/HelloWorld.vue'
   import Vue from "vue"
   import {Component} from "vue-property-decorator"
-  /**
-   * @Component decorator is used to declare a Vue Component
-   * and including Component into the Vue instance
-   */
+
   @Component({
     name: "Home",
     components: {

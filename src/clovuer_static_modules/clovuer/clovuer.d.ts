@@ -1,9 +1,9 @@
 export interface TwoCol {
-  header: string
-  data: string
+  header: string;
+  data: string;
 }
 
 export interface DropdownItem {
-  name: string
-  href: string
+  name: string;
+  href: string;
 }

@@ -35,14 +35,17 @@ import 'popper.js'
  * Lines below enables vue-router and vuex store.
  * Vue router act as a routing point for your SPA (Single Page Application) Vue.
  * Vuex store act as a storing point for reusable variables inside your application.
+ * Vue i18n act as an international translation for your application.
  */
 import router from './router'
 import store from './store'
+import i18n from './i18n'
 
 Vue.config.productionTip = false;
 
 new Vue({
-  router,
-  store,
-  render: h => h(App)
+ router,
+ store,
+ i18n,
+ render: h => h(App)
 }).$mount('#app');

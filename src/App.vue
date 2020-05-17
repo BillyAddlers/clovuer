@@ -11,6 +11,10 @@
       -->
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
+      <!--
+       * we include LocaleChanger component to change locales directly into the root
+      -->
+      <LocaleChanger/>
     </div>
     <!--
      * This is where your content will be displayed.
@@ -25,3 +29,24 @@
  * Clovuer shipped with SCSS/SASS support via node-sass.
 -->
 <style lang="scss" src="./styles.scss"></style>
+
+<script lang="ts">
+  import Vue from "vue"
+  import {Component} from "vue-property-decorator"
+  /**
+   * You can use `@/` as an equivalent for `./src`
+   */
+  import LocaleChanger from "@/components/LocaleChanger.vue";
+
+  /**
+   * @Component decorator is used to declare a Vue Component
+   * and including Component into the Vue instance
+   */
+  @Component({
+    name: "App",
+    components: {
+      LocaleChanger
+    }
+  })
+  export default class App extends Vue {}
+</script>
